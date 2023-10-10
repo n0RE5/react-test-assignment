@@ -1,0 +1,33 @@
+.mainpage {
+    position: relative;
+    padding: 12px 12px 36px 12px;
+}
+
+.mainpage_results {
+    text-align: center;
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 38px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.mainpage_loadmore {
+    background-color: whitesmoke;
+    margin-top: 24px;
+    margin-left: auto;
+    transition: all .15s ease-in;
+    margin-right: auto;
+    display: flex;
+    font-size: 32px;
+    padding: 24px;
+    &:hover {
+        background-color: rgb(220, 220, 220);
+        transform: scale(1.03);
+        cursor: pointer;
+    }
+}
+
+.mainpage_loader {
+    margin: 24px 0;
+}

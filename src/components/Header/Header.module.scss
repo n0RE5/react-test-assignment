@@ -1,0 +1,38 @@
+@import '../../styles/variables.scss';
+
+.header {
+    padding-top: 56px;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: url('../../assets/images/book-bg.jpg') no-repeat center;
+    background-size: cover;
+    &__text {
+        font-weight: 700;
+        font-size: 52px;
+        color: white;
+        margin-bottom: 64px;
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: $xs) {
+    .header {
+        padding: 56px 8px 48px 8px;
+        &__text {
+            font-size: 36px;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (min-width: $xs) and (max-width: $lg) {
+    .header {
+        padding: 56px 8px 48px 8px;
+        &__text {
+            text-align: center;
+        }
+    }
+}

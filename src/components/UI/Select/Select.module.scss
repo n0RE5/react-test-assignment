@@ -1,0 +1,54 @@
+.selectWrapper {
+    position: relative;
+    border-radius: 12px;
+}
+
+.placeholder {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    background: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 0px;
+    &[data-selected="true"] {
+        color: rgb(0, 0, 0);
+    }
+}
+
+.select {
+    border: 1px solid #000;
+    display: grid;
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.arrow {
+    background-image: url('../../../assets/images/arrow.png');
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transition: transform 0.15s ease-in;
+    margin-top: -6px;
+    margin-right: 6px;
+    display: flex;
+    width: 15px;
+    height: 15px;
+}
+
+.selectWrapper[data-is-active="true"] .arrow {
+    transform: rotate(90deg);
+}

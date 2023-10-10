@@ -1,0 +1,84 @@
+@import '../../styles/_variables.scss';
+
+.searchbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.searchbar_input {
+    margin-bottom: 28px;
+    width: 100%;
+    display: flex;
+    input {
+        font-size: 22px;
+        width: 100%;
+        padding: 12px 44px 12px 12px;
+        border: none;
+        border-radius: 0;
+    }
+    button {
+        appearance: none;
+        border: none;
+        &::before {
+            content: '';
+            margin-left: -36px;
+            display: flex;
+            width: 28px;
+            height: 28px;
+            background: url('../../assets/images/search.png') no-repeat center;
+            background-size: contain;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.searchbar_selects {
+    display: flex;
+    >:not(:last-child) {
+        margin-right: 28px;
+    }
+}
+
+.searchbar_select {
+    display: flex;
+    align-items: center;
+    &__text {
+        width: 110px;
+        margin-right: 12px;
+        color: white;
+        font-size: 22px;
+    }
+    &__input {
+        width: 220px;
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: $xs) {
+    .searchbar_selects {
+        flex-direction: column;
+        >:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+    }
+    .searchbar_select {
+        &__input {
+            width: 160px;
+        }
+    }
+}
+
+@media only screen and (min-width: $xs) and (max-width: $sm) {
+    .searchbar_selects {
+        flex-direction: column;
+        >:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+    }
+}

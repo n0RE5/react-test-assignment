@@ -1,0 +1,6 @@
+services:
+  client:
+    build: ./
+    container_name: client
+    ports:
+      - "80:80"

@@ -1,0 +1,30 @@
+.error404 {
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__text {
+        text-align: center;
+        font-size: 78px;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+    &__description {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 400;
+        margin-bottom: 12px;
+    }
+    &__back {
+        text-align: center;
+        color: #105cdf;
+        transition: color .15s ease-in;
+        text-decoration: none;
+        font-size: 32px;
+        font-weight: 500;
+        &:hover {
+            cursor: pointer;
+            color: #013da5;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import '../../styles/_variables.scss';
+
+.booklist {
+    width: 100%;
+}
+
+.booklist_w {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.book_w {
+    width: 22%;
+}
+
+@media only screen and (min-width: 0) and (max-width: $xs) {
+    .book_w {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: $xs) and (max-width: $sm) {
+    .book_w {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: $sm) and (max-width: $md) {
+    .book_w {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: $md) and (max-width: $lg) {
+    .book_w {
+        width: 40%;
+    }
+}

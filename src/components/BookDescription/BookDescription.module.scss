@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+
+.description {
+    &__text {
+        transition: max-height .6s ease-in-out;
+        min-height: 300px;
+        max-height: 500px;
+        overflow: hidden;
+        overflow-y: auto;
+        border: 1px solid $gray;
+        padding: 24px;
+        position: relative;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
+    &__button {
+        border: 1px solid #aaa;
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: 0 0 0 1px #ccc, 2px 3px 3px 0 rgba(0,0,0,0.1);
+        text-align: center;
+        padding: 8px 10px;
+        font-weight: 600;
+        border-radius: 3px;
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: $xs) {
+    .description {
+        font-size: 16px;
+        &__text {
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (min-width: $xs) and (max-width: $sm) {
+    .description {
+        padding: 16px;
+        font-size: 20px;
+    }
+}
